@@ -8,11 +8,11 @@ debian:  sudo apt update   and sudo apt install python3 python3-pip dmidecode hd
 
 arch:  sudo pacman -Syu python python-pip dmidecode hdparm –noconfirm
 
-and after put this : pip install requests colorama
+and after put this : pip install requests colorama discord.py --break-system-package
 
 
 WINDOWS:
 py -m pip install colorama 
 py -m pip install requests
 or
-pip install requests colorama
+pip install requests colorama discord
