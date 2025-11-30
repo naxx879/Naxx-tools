@@ -2,6 +2,21 @@ import requests
 from colorama import Fore
 import utils
 
+logo = """
+ ███▄    █  ▄▄▄      ▒██   ██▒   ▄▄▄█████▓ ▒█████   ▒█████   ██▓      ██████ 
+ ██ ▀█   █ ▒████▄    ▒▒ █ █ ▒░   ▓  ██▒ ▓▒▒██▒  ██▒▒██▒  ██▒▓██▒    ▒██    ▒ 
+▓██  ▀█ ██▒▒██  ▀█▄  ░░  █   ░   ▒ ▓██░ ▒░▒██░  ██▒▒██░  ██▒▒██░    ░ ▓██▄   
+▓██▒  ▐▌██▒░██▄▄▄▄██  ░ █ █ ▒    ░ ▓██▓ ░ ▒██   ██░▒██   ██░▒██░      ▒   ██▒
+▒██░   ▓██░ ▓█   ▓██▒▒██▒ ▒██▒     ▒██▒ ░ ░ ████▓▒░░ ████▓▒░░██████▒▒██████▒▒
+░ ▒░   ▒ ▒  ▒▒   ▓▒█░▒▒ ░ ░▓ ░     ▒ ░░   ░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░▓  ░▒ ▒▓▒ ▒ ░
+░ ░░   ░ ▒░  ▒   ▒▒ ░░░   ░▒ ░       ░      ░ ▒ ▒░   ░ ▒ ▒░ ░ ░ ▒  ░░ ░▒  ░ ░
+   ░   ░ ░   ░   ▒    ░    ░       ░      ░ ░ ░ ▒  ░ ░ ░ ▒    ░ ░   ░  ░  ░  
+         ░       ░  ░ ░    ░                  ░ ░      ░ ░      ░  ░      ░  
+"""
+
+creator = "Creator: Naxx / Yabyxy"
+
+largeur = 80
 
 def run_ip_lookup():
     utils.clear_screen()
@@ -10,7 +25,7 @@ def run_ip_lookup():
     print(Fore.RED + "IP LOOKUP\n")
     ip = input("Enter IP: ")
     try:
-        r = requests.get(f"http://api.ipstack.com/{ip}?access_key=860c8aa4abf83b193c5a902bc056a7c5", timeout=10)
+        r = requests.get(f"https://api.ipstack.com/{ip}?access_key=860c8aa4abf83b193c5a902bc056a7c5", timeout=10)
         r.raise_for_status()
         data = r.json()
         
