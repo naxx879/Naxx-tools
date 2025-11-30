@@ -20,7 +20,6 @@ creator = "Creator: Naxx / Yabyxy"
 
 largeur = 80
 
-# Get the directory where this script is located
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 while True:
@@ -47,6 +46,7 @@ while True:
 
     elif x == "4":
         subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "dm_spammer.py")])
+
 
     else:
         utils.clear_screen()

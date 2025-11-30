@@ -3,10 +3,8 @@ import platform
 import subprocess
 from colorama import init, Fore, Style
 
-# ========== INITIALISATION ==========
 init(autoreset=True)
 
-# ========== CONFIG ==========
 logo = """
  ███▄    █  ▄▄▄      ▒██   ██▒   ▄▄▄█████▓ ▒█████   ▒█████   ██▓      ██████ 
  ██ ▀█   █ ▒████▄    ▒▒ █ █ ▒░   ▓  ██▒ ▓▒▒██▒  ██▒▒██▒  ██▒▓██▒    ▒██    ▒ 
